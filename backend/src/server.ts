@@ -34,7 +34,7 @@ app.get('/api/health', (req, res) => {
 // 错误处理中间件
 app.use(errorHandler);
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 服务器运行在 http://localhost:${PORT}`);
 });
 
